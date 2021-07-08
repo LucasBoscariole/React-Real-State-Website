@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styled, { css } from 'styled-components/macro';
 import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
@@ -6,8 +6,23 @@ import { Button } from './Button';
 import { FaBars } from 'react-icons/fa';
 
 const Navbar = ({ toggle }) => {
+  const [navBarBackground, setNavBarBackground] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 60) {
+      setNavBarBackground(true);
+    } else {
+      setNavBarBackground(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground);
+    return () => window.removeEventListener('scroll', changeBackground);
+  }, []);
+
   return (
-    <NavWrapper>
+    <NavWrapper bar={navBarBackground}>
       <Logo to='/'>REAL</Logo>
       <MenuBars onClick={toggle} />
       <NavMenu>
@@ -38,6 +53,8 @@ const NavWrapper = styled.nav`
   z-index: 100;
   position: fixed;
   width: 100%;
+  transition: 0.5s;
+  background: ${({ bar }) => (bar ? '#cd853f' : null)};
 `;
 
 const NavLink = css`
@@ -81,6 +98,9 @@ const NavMenu = styled.div`
 `;
 const NavMenuLinks = styled(Link)`
   ${NavLink}
+  &:hover {
+    border-bottom: 2px solid #000;
+  }
 `;
 const NavBtn = styled.div`
   display: flex;
