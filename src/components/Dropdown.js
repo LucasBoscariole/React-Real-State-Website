@@ -4,8 +4,11 @@ import { menuData } from '../data/MenuData';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
+import { useGlobalContext } from '../context';
 
-const Dropdown = ({ isOpen, toggle }) => {
+const Dropdown = () => {
+  const { toggle, isOpen } = useGlobalContext();
+
   return (
     <DropdownContainer isOpen={isOpen} onClick={toggle}>
       <CloseBtn onClick={toggle}>

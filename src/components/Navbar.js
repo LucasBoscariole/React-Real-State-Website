@@ -4,25 +4,12 @@ import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
 import { FaBars } from 'react-icons/fa';
+import { useGlobalContext } from '../context';
 
-const Navbar = ({ toggle }) => {
-  const [navBarBackground, setNavBarBackground] = useState(false);
-
-  const changeBackground = () => {
-    if (window.scrollY >= 60) {
-      setNavBarBackground(true);
-    } else {
-      setNavBarBackground(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', changeBackground);
-    return () => window.removeEventListener('scroll', changeBackground);
-  }, []);
-
+const Navbar = () => {
+  const { toggle, navBarBackground, navBarPages } = useGlobalContext();
   return (
-    <NavWrapper bar={navBarBackground}>
+    <NavWrapper fixedNav={navBarBackground} backgroundPages={navBarPages}>
       <Logo to='/'>REAL</Logo>
       <MenuBars onClick={toggle} />
       <NavMenu>
@@ -54,7 +41,8 @@ const NavWrapper = styled.nav`
   position: fixed;
   width: 100%;
   transition: 0.5s;
-  background: ${({ bar }) => (bar ? '#cd853f' : null)};
+  background: ${({ fixedNav, backgroundPages }) =>
+    fixedNav ? '#cd853f' : backgroundPages ? '#00102b' : null};
 `;
 
 const NavLink = css`

@@ -12,18 +12,11 @@ import Error from './pages/Error';
 import Footer from './pages/Footer';
 
 function App() {
-  // Toggle Menu
-  const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-  // Toggle Menu
-
   return (
     <Router>
       <GlobalStyle />
-      <Navbar toggle={toggle} />
-      <Dropdown isOpen={isOpen} toggle={toggle} />
+      <Navbar />
+      <Dropdown />
       <Switch>
         <Route exact path='/'>
           <Home />
