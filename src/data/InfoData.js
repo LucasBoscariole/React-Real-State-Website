@@ -38,23 +38,19 @@ export const NewHouses = [
     path: '/homes',
   },
 ];
-export const interiorDesign = [
-  {
-    title: 'Beautiful Interiors',
-    img: Image8,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maiores quasi ipsum reiciendis quia. Autem maiores minima fugiat voluptates beatae.',
-    path: '/homes',
-  },
-];
+export const interiorDesign = {
+  title: 'Beautiful Interiors',
+  img: Image8,
+  description:
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam vitae facilis sequi porro, ratione soluta illum laborum inventore at voluptate suscipit sed doloremque repellat minus qui enim necessitatibus quos!',
+  path: '/homes',
+};
 
-export const leisureData = [
-  {
-    title: 'Leisure Behind Your Door',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eveniet ratione sequi atque. Illo, ab corporis repellendus porro veniam quidem.',
-    img1: Image9,
-    img2: Image10,
-    path: '/homes',
-  },
-];
+export const leisureData = {
+  title: 'Leisure Behind Your Door',
+  description:
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eveniet ratione sequi atque. Illo, ab corporis repellendus porro veniam quidem.',
+  img1: Image9,
+  img2: Image10,
+  path: '/homes',
+};
