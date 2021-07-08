@@ -24,7 +24,7 @@ export default InfoHeroIcons;
 const Wrapper = styled.section`
   min-height: 20vh;
   width: 100%;
-  background: #f2f2f2;
+  background: #00102b;
   display: flex;
   align-items: center;
 `;
@@ -52,7 +52,7 @@ const ContainerIcon = styled.div`
     margin-top: 0.5rem;
     font-size: 0.9rem;
     font-family: 'Montserrat', sans-serif;
-    color: #121212;
+    color: #fff;
   }
   @media screen and (max-width: 768px) {
     padding: 1.5vh 0;

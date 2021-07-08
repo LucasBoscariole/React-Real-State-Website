@@ -11,9 +11,7 @@ const InteriorDesign = () => {
           <TextContent>
             <h1>{title}</h1>
             <p>{description}</p>
-            <Button primary='false' to={path}>
-              Sew now
-            </Button>
+            <Button to={path}>Sew now</Button>
           </TextContent>
           <ImgContainer>
             <img src={img} alt='interior design' />
