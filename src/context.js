@@ -26,9 +26,18 @@ const AppProvider = ({ children }) => {
   }, []);
   //NavBar Background
 
-  //Background Nav Pages
-  const [navBarPages, setNavBarPages] = useState(false);
-  //Background Nav Pages
+  // Screen Width to set the style in properties
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      let widthDimension = window.innerWidth;
+      setWidth(widthDimension);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Screen Width to set the style in properties
 
   return (
     <AppContext.Provider
@@ -36,8 +45,7 @@ const AppProvider = ({ children }) => {
         isOpen,
         toggle,
         navBarBackground,
-        setNavBarPages,
-        navBarPages,
+        width,
       }}
     >
       {children}

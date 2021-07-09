@@ -3,10 +3,6 @@ import Hero from '../components/Hero';
 import { useGlobalContext } from '../context';
 
 const HeroPage = () => {
-  const { setNavBarPages } = useGlobalContext();
-  useEffect(() => {
-    setNavBarPages(false);
-  }, []);
   return (
     <>
       <Hero />

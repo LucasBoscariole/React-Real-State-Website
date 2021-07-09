@@ -28,6 +28,8 @@ export const homesDataObject = [
     title: 'Bali, Indonesia',
     price: '4,200.000',
     rental: '20.000',
+    locality: 'Indonesia',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image1,
@@ -37,6 +39,8 @@ export const homesDataObject = [
     title: 'Paris, France',
     price: '2,700.000',
     rental: '50.000',
+    locality: 'France',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos. ',
     img: Image2,
@@ -46,6 +50,8 @@ export const homesDataObject = [
     title: 'São Paulo, Brazil',
     price: '1,700.000',
     rental: '10.000',
+    locality: 'Brazil',
+    rental: false,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image3,
@@ -55,6 +61,8 @@ export const homesDataObject = [
     title: 'California, USA',
     price: '8,000.000',
     rental: '50.000',
+    locality: 'USA',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image4,
@@ -64,6 +72,8 @@ export const homesDataObject = [
     title: 'Miami, USA',
     price: '4,500.000',
     rental: '22.000',
+    locality: 'USA',
+    rental: false,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image5,
@@ -73,6 +83,8 @@ export const homesDataObject = [
     title: 'California, USA',
     price: '1,299.000',
     rental: '25.000',
+    locality: 'USA',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image6,
@@ -82,6 +94,8 @@ export const homesDataObject = [
     title: 'San Antonio, USA',
     price: '11,020.000',
     rental: '27.000',
+    locality: 'USA',
+    rental: false,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image7,
@@ -91,6 +105,8 @@ export const homesDataObject = [
     title: 'Tokyo, Japan',
     price: '3,800.000',
     rental: '14.000',
+    locality: 'Japan',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image11,
@@ -100,6 +116,8 @@ export const homesDataObject = [
     title: 'Paraná, Brazil',
     price: '6,450.000',
     rental: '5.000',
+    locality: 'Brazil',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image12,
@@ -109,6 +127,8 @@ export const homesDataObject = [
     title: 'Lisbon, Portugal',
     price: '4,120.000',
     rental: '30.000',
+    locality: 'Portugal',
+    rental: false,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image13,
@@ -118,6 +138,8 @@ export const homesDataObject = [
     title: 'Venice, Italy',
     price: '6,250.000',
     rental: '28.000',
+    locality: 'Italy',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image14,
@@ -127,6 +149,8 @@ export const homesDataObject = [
     title: 'Berlim, German',
     price: '10,000.000',
     rental: '70.000',
+    locality: 'German',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image15,
@@ -136,6 +160,8 @@ export const homesDataObject = [
     title: 'Rome, Italy',
     price: '1,520.000',
     rental: '10.000',
+    locality: 'Italy',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image16,
@@ -145,6 +171,8 @@ export const homesDataObject = [
     title: 'Prague, Portugal',
     price: '10,150.000',
     rental: '85.000',
+    locality: 'Portugal',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image17,
@@ -154,6 +182,8 @@ export const homesDataObject = [
     title: 'New York, USA',
     price: '2,500.000',
     rental: '42.000',
+    locality: 'USA',
+    rental: false,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image18,
@@ -163,6 +193,8 @@ export const homesDataObject = [
     title: 'Florence, Italy',
     price: '4,000.000',
     rental: '30.000',
+    locality: 'Italy',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image19,
@@ -172,6 +204,8 @@ export const homesDataObject = [
     title: 'Surabaya, Insonesia',
     price: '7,500.000',
     rental: '70.000',
+    locality: 'Indonesia',
+    rental: false,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image20,
@@ -181,6 +215,8 @@ export const homesDataObject = [
     title: 'Braganca, Portugal',
     price: '10,599.000',
     rental: '90.000',
+    locality: 'Portugal',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image21,
@@ -190,6 +226,8 @@ export const homesDataObject = [
     title: 'Lyon, France',
     price: '2,000.000',
     rental: '12.000',
+    locality: 'France',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image22,
@@ -199,6 +237,8 @@ export const homesDataObject = [
     title: 'Osaka, Japan',
     price: '4,689.000',
     rental: '11.000',
+    locality: 'Japan',
+    rental: true,
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image23,
