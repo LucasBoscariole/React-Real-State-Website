@@ -33,7 +33,7 @@ const Hero = styled.div`
 
 const Wrapper = styled.section`
   min-height: 60vh;
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   margin: 8vh auto 0 auto;
@@ -41,13 +41,13 @@ const Wrapper = styled.section`
 
 const ContainerFilters = styled.article`
   display: block;
-  width: 22%;
+  width: 20%;
   height: 50vh;
   background: #222;
 `;
 
 const Container = styled.article`
   display: block;
-  width: 77%;
+  width: 78%;
   background: #bababa;
 `;
