@@ -257,3 +257,10 @@ export const designComplementation = [
   { img: Image26 },
   { img: Image27 },
 ];
+
+export const formatPrice = (number) => {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  }).format(number);
+};

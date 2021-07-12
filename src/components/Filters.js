@@ -122,7 +122,7 @@ const Clear = styled.button`
   color: #fff;
   padding: 0.25rem 0.8rem;
   border-radius: 2px;
-  border: none;
+  border: 1px solid transparent;
   outline: none;
   text-transform: uppercase;
   margin-left: 1rem;
@@ -131,5 +131,6 @@ const Clear = styled.button`
   &:hover {
     background: #fff;
     color: red;
+    border: 1px solid red;
   }
 `;

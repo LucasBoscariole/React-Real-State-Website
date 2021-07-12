@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { homesDataObject } from '../data/HomesData';
+import { homesDataObject, formatPrice } from '../data/HomesData';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { useFilterContext } from '../filtercontext';
 
@@ -17,7 +17,7 @@ const PropertiesList = () => {
                 <FaMapMarkerAlt className='pin' />
                 <h3>{item.title}</h3>
               </Flex>
-              <h3>${item.price}</h3>
+              <h3>{formatPrice(item.price)}</h3>
             </FlexWrapper>
           </Container>
         );
@@ -31,7 +31,7 @@ const Wrapper = styled.article`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin: 2rem 0;
 `;
