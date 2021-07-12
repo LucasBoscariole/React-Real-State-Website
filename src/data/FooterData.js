@@ -2,7 +2,6 @@ import { FaFacebookF, FaLinkedin } from 'react-icons/fa';
 import { FiInstagram } from 'react-icons/fi';
 import { FcReddit } from 'react-icons/fc';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 export const FooterDataIcons = [
   { icon: <FaFacebookF /> },
   { icon: <FiInstagram /> },
@@ -10,7 +9,7 @@ export const FooterDataIcons = [
   { icon: <FcReddit /> },
 ];
 
-export const FooterIcons = styled(Link)`
+export const FooterIcons = styled.a`
   color: #fff;
   background: #cd853f;
   border-radius: 50%;

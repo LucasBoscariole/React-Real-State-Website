@@ -56,10 +56,6 @@ const Wrapper = styled.footer`
   background: #00102b;
   display: flex;
   align-items: center;
-  border-top: 1px solid #cd853f;
-  @media screen and (max-width: 1000px) {
-    min-height: 60vh;
-  }
 `;
 
 const Container = styled.section`
@@ -89,7 +85,14 @@ const TextContainer = styled.article`
     margin: 0.7rem 0;
   }
   @media screen and (max-width: 768px) {
+    padding-top: 1.5rem;
     width: 100%;
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
   }
 `;
 
@@ -101,6 +104,7 @@ const ContainerIcons = styled.div`
   margin: 2rem auto 0 auto;
   @media screen and (max-width: 768px) {
     width: 100%;
+    padding-bottom: 1.5rem;
   }
 `;
 

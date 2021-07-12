@@ -42,12 +42,10 @@ const Wrapper = styled.section`
 const ContainerFilters = styled.article`
   display: block;
   width: 20%;
-  height: 50vh;
-  background: #222;
+  min-height: 50vh;
 `;
 
 const Container = styled.article`
   display: block;
   width: 78%;
-  background: #bababa;
 `;

@@ -23,11 +23,16 @@ import Image25 from '../images/image23.jpg';
 import Image26 from '../images/image23.jpg';
 import Image27 from '../images/image23.jpg';
 
+export const getUniqueValues = (data, type) => {
+  let unique = data.map((item) => item[type]);
+  return [...new Set(unique)];
+};
+
 export const homesDataObject = [
   {
     title: 'Bali, Indonesia',
-    price: '4,200.000',
-    rental: '20.000',
+    price: 4200000,
+    rental: 20000,
     locality: 'Indonesia',
     rental: true,
     description:
@@ -37,8 +42,8 @@ export const homesDataObject = [
   },
   {
     title: 'Paris, France',
-    price: '2,700.000',
-    rental: '50.000',
+    price: 2700000,
+    rental: 50000,
     locality: 'France',
     rental: true,
     description:
@@ -48,8 +53,8 @@ export const homesDataObject = [
   },
   {
     title: 'São Paulo, Brazil',
-    price: '1,700.000',
-    rental: '10.000',
+    price: 1700000,
+    rental: 10000,
     locality: 'Brazil',
     rental: false,
     description:
@@ -59,8 +64,8 @@ export const homesDataObject = [
   },
   {
     title: 'California, USA',
-    price: '8,000.000',
-    rental: '50.000',
+    price: 8000000,
+    rental: 50000,
     locality: 'USA',
     rental: true,
     description:
@@ -70,8 +75,8 @@ export const homesDataObject = [
   },
   {
     title: 'Miami, USA',
-    price: '4,500.000',
-    rental: '22.000',
+    price: 4500000,
+    rental: 22000,
     locality: 'USA',
     rental: false,
     description:
@@ -81,8 +86,8 @@ export const homesDataObject = [
   },
   {
     title: 'California, USA',
-    price: '1,299.000',
-    rental: '25.000',
+    price: 1299000,
+    rental: 25000,
     locality: 'USA',
     rental: true,
     description:
@@ -92,8 +97,8 @@ export const homesDataObject = [
   },
   {
     title: 'San Antonio, USA',
-    price: '11,020.000',
-    rental: '27.000',
+    price: 11020000,
+    rental: 27000,
     locality: 'USA',
     rental: false,
     description:
@@ -103,8 +108,8 @@ export const homesDataObject = [
   },
   {
     title: 'Tokyo, Japan',
-    price: '3,800.000',
-    rental: '14.000',
+    price: 3800000,
+    rental: 14000,
     locality: 'Japan',
     rental: true,
     description:
@@ -114,8 +119,8 @@ export const homesDataObject = [
   },
   {
     title: 'Paraná, Brazil',
-    price: '6,450.000',
-    rental: '5.000',
+    price: 6450000,
+    rental: 5000,
     locality: 'Brazil',
     rental: true,
     description:
@@ -125,8 +130,8 @@ export const homesDataObject = [
   },
   {
     title: 'Lisbon, Portugal',
-    price: '4,120.000',
-    rental: '30.000',
+    price: 4120000,
+    rental: 30000,
     locality: 'Portugal',
     rental: false,
     description:
@@ -136,8 +141,8 @@ export const homesDataObject = [
   },
   {
     title: 'Venice, Italy',
-    price: '6,250.000',
-    rental: '28.000',
+    price: 6250000,
+    rental: 28000,
     locality: 'Italy',
     rental: true,
     description:
@@ -147,8 +152,8 @@ export const homesDataObject = [
   },
   {
     title: 'Berlim, German',
-    price: '10,000.000',
-    rental: '70.000',
+    price: 10000000,
+    rental: 70000,
     locality: 'German',
     rental: true,
     description:
@@ -158,8 +163,8 @@ export const homesDataObject = [
   },
   {
     title: 'Rome, Italy',
-    price: '1,520.000',
-    rental: '10.000',
+    price: 1520000,
+    rental: 10000,
     locality: 'Italy',
     rental: true,
     description:
@@ -169,8 +174,8 @@ export const homesDataObject = [
   },
   {
     title: 'Prague, Portugal',
-    price: '10,150.000',
-    rental: '85.000',
+    price: 10150000,
+    rental: 85000,
     locality: 'Portugal',
     rental: true,
     description:
@@ -180,8 +185,8 @@ export const homesDataObject = [
   },
   {
     title: 'New York, USA',
-    price: '2,500.000',
-    rental: '42.000',
+    price: 2500000,
+    rental: 42000,
     locality: 'USA',
     rental: false,
     description:
@@ -191,8 +196,8 @@ export const homesDataObject = [
   },
   {
     title: 'Florence, Italy',
-    price: '4,000.000',
-    rental: '30.000',
+    price: 4000000,
+    rental: 30000,
     locality: 'Italy',
     rental: true,
     description:
@@ -202,8 +207,8 @@ export const homesDataObject = [
   },
   {
     title: 'Surabaya, Insonesia',
-    price: '7,500.000',
-    rental: '70.000',
+    price: 7500000,
+    rental: 70000,
     locality: 'Indonesia',
     rental: false,
     description:
@@ -213,8 +218,8 @@ export const homesDataObject = [
   },
   {
     title: 'Braganca, Portugal',
-    price: '10,599.000',
-    rental: '90.000',
+    price: 10599000,
+    rental: 90000,
     locality: 'Portugal',
     rental: true,
     description:
@@ -224,8 +229,8 @@ export const homesDataObject = [
   },
   {
     title: 'Lyon, France',
-    price: '2,000.000',
-    rental: '12.000',
+    price: 2000000,
+    rental: 12000,
     locality: 'France',
     rental: true,
     description:
@@ -235,8 +240,8 @@ export const homesDataObject = [
   },
   {
     title: 'Osaka, Japan',
-    price: '4,689.000',
-    rental: '11.000',
+    price: 4689000,
+    rental: 11000,
     locality: 'Japan',
     rental: true,
     description:
