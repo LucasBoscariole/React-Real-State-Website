@@ -8,6 +8,7 @@ const PropertiesList = () => {
   const { filtered_products: products } = useFilterContext();
   return (
     <Wrapper>
+      {products.length < 1 ? <h2>Sorry, no results!</h2> : null}
       {products.map((item) => {
         return (
           <Container key={item.id}>
@@ -31,23 +32,30 @@ const Wrapper = styled.article`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: start;
   flex-wrap: wrap;
   margin: 2rem 0;
+  @media screen and (max-width: 769px) {
+    justify-content: center;
+  }
 `;
 
 const Container = styled.div`
-  width: 320px;
+  width: 300px;
   height: 280px;
   color: #cd853f;
   background: #bababa;
-  margin-bottom: 3rem;
+  margin: 0 0.8rem 2.5rem 0.8rem;
   border-radius: 0 15px 0 15px;
   img {
     border-radius: 0 15px 0 0;
     width: 100%;
     height: 75%;
     object-fit: cover;
+  }
+  @media screen and (max-width: 768px) {
+    width: 260px;
+    height: 240px;
   }
 `;
 const FlexWrapper = styled.div`

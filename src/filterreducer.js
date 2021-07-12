@@ -38,58 +38,45 @@ const filter_reducer = (state, action) => {
     }
     return { ...state, filtered_products: tempProducts };
   }
-  // if (action.type === UPDATE_FILTERS) {
-  //   const { name, value } = action.payload;
-  //   return { ...state, filters: { ...state.filters, [name]: value } };
-  // }
-  // if (action.type === FILTER_PRODUCTS) {
-  //   const { all_products } = state;
-  //   const { text, category, company, color, price, shipping } = state.filters;
-  //   let tempProducts = [...all_products];
-  //   if (text) {
-  //     tempProducts = tempProducts.filter((product) =>
-  //       product.name.toLowerCase().startsWith(text)
-  //     );
-  //   }
-  //   if (category !== 'all') {
-  //     tempProducts = tempProducts.filter(
-  //       (product) => product.category === category
-  //     );
-  //   }
-  //   if (company !== 'all') {
-  //     tempProducts = tempProducts.filter(
-  //       (product) => product.company === company
-  //     );
-  //   }
-  //   if (color !== 'all') {
-  //     tempProducts = tempProducts.filter((product) => {
-  //       return product.colors.find((c) => c === color);
-  //     });
-  //   }
-  //   // filter by price
-  //   tempProducts = tempProducts.filter((product) => product.price <= price);
-  //   // filter by shipping
-  //   if (shipping) {
-  //     tempProducts = tempProducts.filter(
-  //       (product) => product.shipping === true
-  //     );
-  //   }
-  //   return { ...state, filtered_products: tempProducts };
-  // }
-  // if (action.type === CLEAR_FILTERS) {
-  //   return {
-  //     ...state,
-  //     filters: {
-  //       ...state.filters,
-  //       text: '',
-  //       company: 'all',
-  //       category: 'all',
-  //       color: 'all',
-  //       price: state.filters.max_price,
-  //       shipping: false,
-  //     },
-  //   };
-  // }
+  //Filters
+  if (action.type === 'UPDATE_FILTERS') {
+    const { name, value } = action.payload;
+    return { ...state, filters: { ...state.filters, [name]: value } };
+  }
+  if (action.type === 'FILTER_PRODUCTS') {
+    const { all_products } = state;
+    const { text, locality, price, rental } = state.filters;
+    let tempProducts = [...all_products];
+    if (text) {
+      tempProducts = tempProducts.filter((product) =>
+        product.title.toLowerCase().startsWith(text)
+      );
+    }
+    if (locality !== 'all') {
+      tempProducts = tempProducts.filter(
+        (product) => product.locality === locality
+      );
+    }
+    // Filter by price
+    tempProducts = tempProducts.filter((product) => product.price <= price);
+    // Filter by rental
+    if (rental) {
+      tempProducts = tempProducts.filter((product) => product.rental === true);
+    }
+    return { ...state, filtered_products: tempProducts };
+  }
+  if (action.type === 'CLEAR_FILTERS') {
+    return {
+      ...state,
+      filters: {
+        ...state.filters,
+        text: '',
+        locality: 'all',
+        price: state.filters.max_price,
+        rental: false,
+      },
+    };
+  }
   throw new Error(`No Matching "${action.type}" - action type`);
 };
 

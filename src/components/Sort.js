@@ -9,7 +9,7 @@ const Sort = () => {
     <Wrapper>
       <div className='line'></div>
       <form onSubmit={(e) => e.preventDefault()}>
-        <label htmlFor='sort'>sort by</label>
+        {width <= 768 ? null : <label htmlFor='sort'>sort by</label>}
         <select
           name='sort'
           id='sort'
@@ -35,7 +35,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   width: 100%;
   .line {
-    width: 75%;
+    width: 55%;
     height: 3px;
     background: #000;
   }
@@ -50,5 +50,16 @@ const Wrapper = styled.div`
     font-size: 1rem;
     text-transform: capitalize;
     margin-right: 0.8rem;
+  }
+  @media screen and (max-width: 768px) {
+    .line {
+      width: 40%;
+    }
+    .sort-input {
+      font-size: 0.8rem;
+    }
+    label {
+      font-size: 0.8rem;
+    }
   }
 `;

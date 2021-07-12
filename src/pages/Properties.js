@@ -7,20 +7,37 @@ import { useGlobalContext } from '../context';
 
 const Homes = () => {
   const { width } = useGlobalContext();
-  return (
-    <>
-      <Hero />
-      <Wrapper>
-        <ContainerFilters>
-          <Filters />
-        </ContainerFilters>
-        <Container>
-          <Sort />
-          <PropertiesList />
-        </Container>
-      </Wrapper>
-    </>
-  );
+  if (width <= 768) {
+    return (
+      <>
+        <Hero />
+        <Wrapper>
+          <Container>
+            <Flex>
+              <Filters />
+              <Sort />
+            </Flex>
+            <PropertiesList />
+          </Container>
+        </Wrapper>
+      </>
+    );
+  } else {
+    return (
+      <>
+        <Hero />
+        <Wrapper>
+          <ContainerFilters>
+            <Filters />
+          </ContainerFilters>
+          <Container>
+            <Sort />
+            <PropertiesList />
+          </Container>
+        </Wrapper>
+      </>
+    );
+  }
 };
 
 export default Homes;
@@ -48,4 +65,15 @@ const ContainerFilters = styled.article`
 const Container = styled.article`
   display: block;
   width: 78%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+`;
+
+const Flex = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
