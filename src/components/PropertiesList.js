@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { homesDataObject, formatPrice } from '../data/HomesData';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { useFilterContext } from '../filtercontext';
+import { Link } from 'react-router-dom';
 
 const PropertiesList = () => {
   const { filtered_products: products } = useFilterContext();
@@ -11,7 +12,7 @@ const PropertiesList = () => {
       {products.length < 1 ? <h2>Sorry, no results!</h2> : null}
       {products.map((item) => {
         return (
-          <Container key={item.id}>
+          <Container key={item.id} to={`/properties/${item.id}`}>
             <img src={item.img} alt={`House in ${item.title}`} />
             <FlexWrapper>
               <Flex>
@@ -40,13 +41,14 @@ const Wrapper = styled.article`
   }
 `;
 
-const Container = styled.div`
+const Container = styled(Link)`
   width: 300px;
   height: 280px;
   color: #cd853f;
   background: #f2f2f2;
   margin: 0 0.8rem 2.5rem 0.8rem;
   border-radius: 0 15px 0 15px;
+  text-decoration: none;
   img {
     border-radius: 0 15px 0 0;
     width: 100%;
