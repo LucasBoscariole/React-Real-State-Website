@@ -36,9 +36,11 @@ const AppProvider = ({ children }) => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
   // Screen Width to set the style in properties
 
+  //NavBar Background on Some Pages
+  const [backgroundPages, setBackgroundPages] = useState(false);
+  //NavBar Background on Some Pages
   return (
     <AppContext.Provider
       value={{
@@ -46,6 +48,8 @@ const AppProvider = ({ children }) => {
         toggle,
         navBarBackground,
         width,
+        backgroundPages,
+        setBackgroundPages,
       }}
     >
       {children}

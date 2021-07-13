@@ -7,9 +7,9 @@ import { FaBars } from 'react-icons/fa';
 import { useGlobalContext } from '../context';
 
 const Navbar = () => {
-  const { toggle, navBarBackground, navBarPages } = useGlobalContext();
+  const { toggle, navBarBackground, backgroundPages } = useGlobalContext();
   return (
-    <NavWrapper fixedNav={navBarBackground} backgroundPages={navBarPages}>
+    <NavWrapper fixedNav={navBarBackground} backgroundPages={backgroundPages}>
       <Logo to='/'>REAL</Logo>
       <MenuBars onClick={toggle} />
       <NavMenu>
@@ -42,7 +42,7 @@ const NavWrapper = styled.nav`
   width: 100%;
   transition: 0.5s;
   background: ${({ fixedNav, backgroundPages }) =>
-    fixedNav ? '#cd853f' : backgroundPages ? '#00102b' : null};
+    fixedNav ? '#cd853f' : backgroundPages ? 'rgba(0, 9, 51, 0.9)' : null};
 `;
 
 const NavLink = css`

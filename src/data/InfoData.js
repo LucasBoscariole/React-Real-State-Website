@@ -1,6 +1,7 @@
 import { IoCalendar } from 'react-icons/io5';
 import { FaMoneyBillAlt } from 'react-icons/fa';
 import { BsFillHouseFill, BsFillEyeSlashFill } from 'react-icons/bs';
+import { MdPinDrop, MdPool } from 'react-icons/md';
 import Image5 from '../images/image5.jpg';
 import Image6 from '../images/image6.jpg';
 import Image7 from '../images/image7.jpg';
@@ -13,6 +14,15 @@ export const infoIconsData = [
   { title: 'Flexible Rental Dates', icon: <IoCalendar /> },
   { title: 'Space & Privacy', icon: <BsFillEyeSlashFill /> },
   { title: 'More than 600 Houses', icon: <BsFillHouseFill /> },
+];
+
+export const aboutIcons = [
+  { title: 'Low Commission', icon: <FaMoneyBillAlt /> },
+  { title: 'Flexible Rental Dates', icon: <IoCalendar /> },
+  { title: 'Space & Privacy', icon: <BsFillEyeSlashFill /> },
+  { title: 'More than 600 Houses', icon: <BsFillHouseFill /> },
+  { title: 'Great Locations', icon: <MdPinDrop /> },
+  { title: 'Awesomes Leisure Areas', icon: <MdPool /> },
 ];
 
 export const NewHouses = [

@@ -6,7 +6,8 @@ import PropertiesList from '../components/PropertiesList';
 import { useGlobalContext } from '../context';
 
 const Homes = () => {
-  const { width } = useGlobalContext();
+  const { width, setBackgroundPages } = useGlobalContext();
+  setBackgroundPages(true);
   if (width <= 768) {
     return (
       <>
@@ -44,8 +45,7 @@ export default Homes;
 
 const Hero = styled.div`
   width: 100%;
-  height: 25vh;
-  background-color: #00102b;
+  height: 10vh;
 `;
 
 const Wrapper = styled.section`
