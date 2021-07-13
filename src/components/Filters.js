@@ -197,7 +197,7 @@ const Control = styled.div`
     margin-left: 50%;
     transform: translateX(-50%);
     padding: 0.5rem 1.5rem;
-    background: #ababab;
+    background: #f2f2f2;
     border-radius: 10px;
     border-color: transparent;
     letter-spacing: 1px;

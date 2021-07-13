@@ -44,7 +44,7 @@ const Container = styled.div`
   width: 300px;
   height: 280px;
   color: #cd853f;
-  background: #bababa;
+  background: #f2f2f2;
   margin: 0 0.8rem 2.5rem 0.8rem;
   border-radius: 0 15px 0 15px;
   img {

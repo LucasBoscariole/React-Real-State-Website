@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import { useGlobalContext } from '../context';
+import { FooterDataIcons } from '../data/FooterData';
 import Image1 from '../images/image14.jpg';
 import Image2 from '../images/image9.jpg';
 
@@ -71,6 +72,26 @@ const Contact = () => {
               <button type='submit'>Submit</button>
             </form>
           </FlexOne>
+          <FlexTwo>
+            <ContainerTwo>
+              <h2>Contact</h2>
+              <p>realestate@california.com</p>
+              <p>realestate@france.com</p>
+            </ContainerTwo>
+            <ContainerTwo>
+              <h2>Phone</h2>
+              <p>123-456-7890</p>
+              <p>098-765-4321</p>
+            </ContainerTwo>
+            <ContainerTwo>
+              <h2>Location</h2>
+              <p>829, One Way Stree - California.</p>
+              <p>219, Second Way Stree - Miami.</p>
+            </ContainerTwo>
+            <ContainerThree>
+              {FooterDataIcons.map((item, index) => item.icon)}
+            </ContainerThree>
+          </FlexTwo>
         </Container>
       </Wrapper>
     </>
@@ -109,7 +130,7 @@ const BackgroundTwo = styled.div`
 
 const Wrapper = styled.section`
   width: 100%;
-  height: 98vh;
+  min-height: 98vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -117,7 +138,7 @@ const Wrapper = styled.section`
 
 const Container = styled.div`
   width: 60%;
-  height: 70vh;
+  min-height: 65vh;
   background: #fff;
   box-shadow: 0px 0px 20px -2px rgba(0, 0, 0, 0.75);
   margin-left: 20%;
@@ -126,12 +147,19 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  @media screen and (max-width: 769px) {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 const FlexOne = styled.div`
   height: 80%;
   display: grid;
-  width: 60%;
+  width: 55%;
+  margin-top: -5rem;
   .input,
   textarea {
     border: none;
@@ -172,10 +200,63 @@ const FlexOne = styled.div`
     display: flex;
     align-items: center;
     justify-content: start;
+    flex-wrap: wrap;
     width: 50%;
     margin-left: 1rem;
   }
   .check {
     margin: 1.1rem 1.5rem 1.1rem 0.5rem;
+  }
+  @media screen and (max-width: 769px) {
+    width: 100%;
+    height: 70vh;
+    margin-top: 0rem;
+    .input {
+      &:first-child {
+        padding-top: 1rem;
+      }
+    }
+    .flex {
+      width: 50%;
+    }
+  }
+`;
+
+const FlexTwo = styled.div`
+  width: 45%;
+  height: 80%;
+  display: block;
+  margin-top: -2rem;
+  @media screen and (max-width: 769px) {
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+`;
+
+const ContainerTwo = styled.div`
+  display: block;
+  h2 {
+    letter-spacing: 1px;
+  }
+  p {
+    font-weight: 400;
+    padding: 0.5rem 0;
+    &:last-child {
+      padding-bottom: 1.7rem;
+    }
+  }
+`;
+
+const ContainerThree = styled.div`
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  color: #000;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  @media screen and (max-width: 769px) {
+    padding-bottom: 1.5rem;
   }
 `;
