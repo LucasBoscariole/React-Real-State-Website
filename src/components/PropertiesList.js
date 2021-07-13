@@ -12,7 +12,7 @@ const PropertiesList = () => {
       {products.length < 1 ? <h2>Sorry, no results!</h2> : null}
       {products.map((item) => {
         return (
-          <Container key={item.id} to={`/properties/${item.id}`}>
+          <Container key={item.id} to={`/properties/:${item.id}`}>
             <img src={item.img} alt={`House in ${item.title}`} />
             <FlexWrapper>
               <Flex>
