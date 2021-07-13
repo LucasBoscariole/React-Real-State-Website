@@ -18,10 +18,10 @@ import Image20 from '../images/image20.jpg';
 import Image21 from '../images/image21.jpg';
 import Image22 from '../images/image22.jpg';
 import Image23 from '../images/image23.jpg';
-import Image24 from '../images/image23.jpg';
-import Image25 from '../images/image23.jpg';
-import Image26 from '../images/image23.jpg';
-import Image27 from '../images/image23.jpg';
+import Image24 from '../images/image24.jpg';
+import Image25 from '../images/image25.jpg';
+import Image26 from '../images/image26.jpg';
+import Image27 from '../images/image27.jpg';
 
 export const getUniqueValues = (data, type) => {
   let unique = data.map((item) => item[type]);
@@ -39,6 +39,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image1,
     id: '1',
+    images: [
+      { img: Image1 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Paris, France',
@@ -50,6 +57,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos. ',
     img: Image2,
     id: '2',
+    images: [
+      { img: Image2 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'São Paulo, Brazil',
@@ -61,6 +75,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image3,
     id: '3',
+    images: [
+      { img: Image3 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'California, USA',
@@ -72,6 +93,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image4,
     id: '4',
+    images: [
+      { img: Image4 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Miami, USA',
@@ -83,6 +111,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image5,
     id: '5',
+    images: [
+      { img: Image5 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'California, USA',
@@ -94,6 +129,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image6,
     id: '6',
+    images: [
+      { img: Image6 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'San Antonio, USA',
@@ -105,6 +147,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image7,
     id: '7',
+    images: [
+      { img: Image7 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Tokyo, Japan',
@@ -116,6 +165,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image11,
     id: '8',
+    images: [
+      { img: Image11 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Paraná, Brazil',
@@ -127,6 +183,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image12,
     id: '9',
+    images: [
+      { img: Image12 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Lisbon, Portugal',
@@ -138,6 +201,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image13,
     id: '10',
+    images: [
+      { img: Image13 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Venice, Italy',
@@ -149,6 +219,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image14,
     id: '11',
+    images: [
+      { img: Image14 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Berlim, German',
@@ -160,6 +237,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image15,
     id: '12',
+    images: [
+      { img: Image15 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Rome, Italy',
@@ -171,6 +255,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image16,
     id: '13',
+    images: [
+      { img: Image16 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Prague, Portugal',
@@ -182,6 +273,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image17,
     id: '14',
+    images: [
+      { img: Image17 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'New York, USA',
@@ -193,6 +291,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image18,
     id: '15',
+    images: [
+      { img: Image18 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Florence, Italy',
@@ -204,6 +309,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image19,
     id: '16',
+    images: [
+      { img: Image19 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Surabaya, Insonesia',
@@ -215,6 +327,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image20,
     id: '17',
+    images: [
+      { img: Image20 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Braganca, Portugal',
@@ -226,6 +345,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image21,
     id: '18',
+    images: [
+      { img: Image21 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Lyon, France',
@@ -237,6 +363,13 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image22,
     id: '19',
+    images: [
+      { img: Image22 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
   {
     title: 'Osaka, Japan',
@@ -248,14 +381,14 @@ export const homesDataObject = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum fugiat voluptates cumque nulla, excepturi nihil ab dolor animi cupiditate maxime labore deleniti sapiente ipsam eius distinctio, libero eligendi doloribus eos.',
     img: Image23,
     id: '20',
+    images: [
+      { img: Image23 },
+      { img: Image24 },
+      { img: Image25 },
+      { img: Image26 },
+      { img: Image27 },
+    ],
   },
-];
-
-export const designComplementation = [
-  { img: Image24 },
-  { img: Image25 },
-  { img: Image26 },
-  { img: Image27 },
 ];
 
 export const formatPrice = (number) => {

@@ -30,7 +30,7 @@ function App() {
         <Route exact path='/contact'>
           <Contact />
         </Route>
-        <Route path='/properties/:id' children={<SingleHouse />} />
+        <Route exact path='/properties/:id' children={<SingleHouse />} />
         <Route path='*'>
           <Error />
         </Route>
