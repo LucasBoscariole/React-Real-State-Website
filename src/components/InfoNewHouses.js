@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { NewHouses } from '../data/InfoData';
 import { Button } from './Button';
+import Bounce from 'react-reveal/Bounce';
 
 const InfoNewHouses = () => {
   return (
@@ -14,7 +15,9 @@ const InfoNewHouses = () => {
         {NewHouses.map((item, index) => {
           return (
             <Content key={index}>
-              <img src={item.img} alt='' />
+              <Bounce left>
+                <img src={item.img} alt='' />
+              </Bounce>
               <div className='text'>
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>

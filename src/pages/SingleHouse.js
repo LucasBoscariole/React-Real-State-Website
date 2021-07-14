@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { useGlobalContext } from '../context';
 import { useParams } from 'react-router-dom';
@@ -22,7 +22,7 @@ const SingleHouse = () => {
       <WrapperContainer>
         <Container>
           {homesDataObject.map((item) => {
-            if (item.id == id) {
+            if (item.id === id) {
               return (
                 <>
                   <ImageContainer>

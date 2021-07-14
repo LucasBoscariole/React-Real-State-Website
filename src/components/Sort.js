@@ -2,27 +2,31 @@ import React from 'react';
 import styled from 'styled-components';
 import { useGlobalContext } from '../context';
 import { useFilterContext } from '../filtercontext';
+import Flip from 'react-reveal/Flip';
+
 const Sort = () => {
   const { width } = useGlobalContext();
   const { updateSort } = useFilterContext();
   return (
     <Wrapper>
-      <div className='line'></div>
-      <form onSubmit={(e) => e.preventDefault()}>
-        {width <= 768 ? null : <label htmlFor='sort'>sort by</label>}
-        <select
-          name='sort'
-          id='sort'
-          // value={sort}
-          onChange={updateSort}
-          className='sort-input'
-        >
-          <option value='price-lowest'>price (lowest)</option>
-          <option value='price-highest'>price (highest)</option>
-          <option value='name-a'>name (a - z)</option>
-          <option value='name-z'>name (z - a)</option>
-        </select>
-      </form>
+      <Flip left>
+        <div className='line'></div>
+        <form onSubmit={(e) => e.preventDefault()}>
+          {width <= 768 ? null : <label htmlFor='sort'>sort by</label>}
+          <select
+            name='sort'
+            id='sort'
+            // value={sort}
+            onChange={updateSort}
+            className='sort-input'
+          >
+            <option value='price-lowest'>price (lowest)</option>
+            <option value='price-highest'>price (highest)</option>
+            <option value='name-a'>name (a - z)</option>
+            <option value='name-z'>name (z - a)</option>
+          </select>
+        </form>
+      </Flip>
     </Wrapper>
   );
 };

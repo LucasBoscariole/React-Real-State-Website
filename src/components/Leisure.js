@@ -2,21 +2,30 @@ import React from 'react';
 import styled from 'styled-components';
 import { leisureData } from '../data/InfoData';
 import { Button } from './Button';
+import Zoom from 'react-reveal/Zoom';
+import RubberBand from 'react-reveal/RubberBand';
+
 const Leisure = () => {
   const { title, description, img1, img2, path } = leisureData;
   return (
     <Wrapper>
       <Container>
         <ImgContainer>
-          <img src={img1} alt='pool' className='imageOne' />
-          <img src={img2} alt='garden' className='imageTwo' />
+          <Zoom left>
+            <img src={img1} alt='pool' className='imageOne' />
+          </Zoom>
+          <Zoom right>
+            <img src={img2} alt='garden' className='imageTwo' />
+          </Zoom>
         </ImgContainer>
         <TextContainer>
-          <h1>{title}</h1>
-          <p>{description}</p>
-          <Button to={path} primary='true'>
-            See Now
-          </Button>
+          <RubberBand>
+            <h1>{title}</h1>
+            <p>{description}</p>
+            <Button to={path} primary='true'>
+              See Now
+            </Button>
+          </RubberBand>
         </TextContainer>
       </Container>
     </Wrapper>

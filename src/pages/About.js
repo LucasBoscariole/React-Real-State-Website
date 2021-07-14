@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { useGlobalContext } from '../context';
 import Image1 from '../images/image18.jpg';
 import { Button } from '../components/Button';
 import { aboutIcons } from '../data/InfoData';
+import Flash from 'react-reveal/Flash';
 
 const About = () => {
   const { setBackgroundPages } = useGlobalContext();
@@ -13,34 +14,39 @@ const About = () => {
       <Image />
       <Wrapper>
         <ContainerWrapper>
-          <div className='container1'>
-            <h1>About Us</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
-              quos rem sed quibusdam nihil quam animi dignissimos assumenda
-              provident perferendis! Similique quae officia doloribus veniam cum
-              ad aliquam ex aliquid!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
-              blanditiis inventore perferendis magnam sunt et repellendus
-              assumenda esse laborum eum quos id porro tempora possimus minus
-              exercitationem earum itaque quibusdam odit aliquid dicta suscipit.
-              Beatae ut impedit quasi libero rerum vitae amet! Quia, neque unde
-              dolorem necessitatibus quis corrupti tempore reprehenderit rerum
-              deserunt quidem aliquid facere molestiae inventore, dolor omnis
-              quae officia quaerat iste rem doloremque. Debitis sunt voluptatem
-              enim perspiciatis ratione deserunt repudiandae iure, dolorem,
-              harum, quis voluptas similique dolore.
-            </p>
-            <Button to='/contact'>Contact Us</Button>
-          </div>
+          <Flash>
+            <div className='container1'>
+              <h1>About Us</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni
+                quos rem sed quibusdam nihil quam animi dignissimos assumenda
+                provident perferendis! Similique quae officia doloribus veniam
+                cum ad aliquam ex aliquid!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Placeat, blanditiis inventore perferendis magnam sunt et
+                repellendus assumenda esse laborum eum quos id porro tempora
+                possimus minus exercitationem earum itaque quibusdam odit
+                aliquid dicta suscipit. Beatae ut impedit quasi libero rerum
+                vitae amet! Quia, neque unde dolorem necessitatibus quis
+                corrupti tempore reprehenderit rerum deserunt quidem aliquid
+                facere molestiae inventore, dolor omnis quae officia quaerat
+                iste rem doloremque. Debitis sunt voluptatem enim perspiciatis
+                ratione deserunt repudiandae iure, dolorem, harum, quis voluptas
+                similique dolore.
+              </p>
+              <Button to='/contact'>Contact Us</Button>
+            </div>
+          </Flash>
           <div className='container2'>
             {aboutIcons.map((item, index) => {
               return (
-                <IconContainer key={index}>
-                  {item.icon} <h5>{item.title}</h5>
-                </IconContainer>
+                <Flash>
+                  <IconContainer key={index}>
+                    {item.icon} <h5>{item.title}</h5>
+                  </IconContainer>
+                </Flash>
               );
             })}
           </div>

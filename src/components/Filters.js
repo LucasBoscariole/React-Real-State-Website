@@ -12,9 +12,8 @@ import { BsFilterLeft } from 'react-icons/bs';
 const Filters = () => {
   const localityData = getUniqueValues(homesDataObject, 'locality');
   const {
-    filters: { text, locality, min_price, price, max_price, rental },
+    filters: { text, min_price, price, max_price, rental },
     updateFilters,
-    all_products,
     clearFilters,
   } = useFilterContext();
   const { width } = useGlobalContext();

@@ -2,49 +2,52 @@ import React from 'react';
 import styled from 'styled-components';
 import { FooterIcons, FooterDataIcons } from '../data/FooterData';
 import { Link } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 const Footer = () => {
   return (
-    <Wrapper>
-      <Container>
-        <TextContainer>
-          <h1>"We’re the key to your new home."</h1>
-          <p className='justify'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-            repudiandae beatae unde voluptatibus molestias nesciunt. Suscipit
-            tempora quaerat alias cumque.
-          </p>
-          <p>&copy; 2021 Real Estate.</p>
-        </TextContainer>
-        <ExploreContainer>
-          <Flex>
-            <ContainerExplore>
-              <h2>Explore</h2>
-              <Link to='/'>Home</Link>
-              <Link to='/about'>About</Link>
-              <Link to='/properties'>Properties</Link>
-              <Link to='/contact'>Contact</Link>
-            </ContainerExplore>
-            <ContainerExplore>
-              <h2>Visit Us</h2>
-              <p>California, USA</p>
-              <p>Prague, Portugal</p>
-              <p>São Paulo, Brasil</p>
-            </ContainerExplore>
-            <ContainerExplore>
-              <h2>Legal</h2>
-              <p>Terms</p>
-              <p>Privacy</p>
-            </ContainerExplore>
-          </Flex>
-          <ContainerIcons>
-            {FooterDataIcons.map((item, index) => {
-              return <FooterIcons key={index}>{item.icon}</FooterIcons>;
-            })}
-          </ContainerIcons>
-        </ExploreContainer>
-      </Container>
-    </Wrapper>
+    <Fade top>
+      <Wrapper>
+        <Container>
+          <TextContainer>
+            <h1>"We’re the key to your new home."</h1>
+            <p className='justify'>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+              repudiandae beatae unde voluptatibus molestias nesciunt. Suscipit
+              tempora quaerat alias cumque.
+            </p>
+            <p>&copy; 2021 Real Estate.</p>
+          </TextContainer>
+          <ExploreContainer>
+            <Flex>
+              <ContainerExplore>
+                <h2>Explore</h2>
+                <Link to='/'>Home</Link>
+                <Link to='/about'>About</Link>
+                <Link to='/properties'>Properties</Link>
+                <Link to='/contact'>Contact</Link>
+              </ContainerExplore>
+              <ContainerExplore>
+                <h2>Visit Us</h2>
+                <p>California, USA</p>
+                <p>Prague, Portugal</p>
+                <p>São Paulo, Brasil</p>
+              </ContainerExplore>
+              <ContainerExplore>
+                <h2>Legal</h2>
+                <p>Terms</p>
+                <p>Privacy</p>
+              </ContainerExplore>
+            </Flex>
+            <ContainerIcons>
+              {FooterDataIcons.map((item, index) => {
+                return <FooterIcons key={index}>{item.icon}</FooterIcons>;
+              })}
+            </ContainerIcons>
+          </ExploreContainer>
+        </Container>
+      </Wrapper>
+    </Fade>
   );
 };
 

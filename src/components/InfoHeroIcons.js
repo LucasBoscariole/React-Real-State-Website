@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { infoIconsData } from '../data/InfoData';
+import Fade from 'react-reveal/Fade';
 
 const InfoHeroIcons = () => {
   return (
@@ -9,7 +10,7 @@ const InfoHeroIcons = () => {
         {infoIconsData.map((item, index) => {
           return (
             <ContainerIcon key={index}>
-              {item.icon}
+              <Fade top>{item.icon}</Fade>
               <p>{item.title}</p>
             </ContainerIcon>
           );

@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { homesDataObject, formatPrice } from '../data/HomesData';
+import { formatPrice } from '../data/HomesData';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { useFilterContext } from '../filtercontext';
 import { Link } from 'react-router-dom';
+import Fade from 'react-reveal/Fade';
 
 const PropertiesList = () => {
   const { filtered_products: products } = useFilterContext();
@@ -13,7 +14,9 @@ const PropertiesList = () => {
       {products.map((item) => {
         return (
           <Container key={item.id} to={`/properties/:${item.id}`}>
-            <img src={item.img} alt={`House in ${item.title}`} />
+            <Fade left>
+              <img src={item.img} alt={`House in ${item.title}`} />
+            </Fade>
             <FlexWrapper>
               <Flex>
                 <FaMapMarkerAlt className='pin' />

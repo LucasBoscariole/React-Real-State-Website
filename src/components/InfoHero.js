@@ -12,10 +12,6 @@ const InfoHero = () => {
   );
 };
 
-// infoIconsData.map((item, index) => {
-//   return;
-// });
-
 export default InfoHero;
 
 const Wrapper = styled.section`

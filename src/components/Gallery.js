@@ -1,25 +1,28 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 const Gallery = ({ images = [[]] }) => {
   const [main, setMain] = useState(images[0]);
 
   return (
     <Wrapper>
-      <img src={main.img} alt='' className='main ' />
-      <div className='gallery'>
-        {images.map((image, index) => {
-          return (
-            <img
-              src={image.img}
-              alt=''
-              key={index}
-              className={`${image.img === main.img ? 'active' : null}`}
-              onClick={() => setMain(images[index])}
-            />
-          );
-        })}
-      </div>
+      <Fade left>
+        <img src={main.img} alt='' className='main ' />
+        <div className='gallery'>
+          {images.map((image, index) => {
+            return (
+              <img
+                src={image.img}
+                alt=''
+                key={index}
+                className={`${image.img === main.img ? 'active' : null}`}
+                onClick={() => setMain(images[index])}
+              />
+            );
+          })}
+        </div>
+      </Fade>
     </Wrapper>
   );
 };

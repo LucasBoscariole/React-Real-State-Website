@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { homesDataObject, formatPrice } from '../data/HomesData';
+import { homesDataObject } from '../data/HomesData';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';

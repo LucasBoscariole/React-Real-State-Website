@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect, useReducer } from 'react';
+import React, { useContext, useEffect, useReducer } from 'react';
 import { homesDataObject } from './data/HomesData';
 import reducer from './filterreducer';
 
@@ -23,7 +23,7 @@ const FilterProvider = ({ children }) => {
 
   useEffect(() => {
     dispatch({ type: 'LOAD_PRODUCTS', payload: homesDataObject });
-  }, [homesDataObject]);
+  }, []);
 
   useEffect(() => {
     dispatch({ type: 'FILTER_PRODUCTS' });

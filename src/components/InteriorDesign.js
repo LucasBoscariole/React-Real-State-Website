@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { interiorDesign } from '../data/InfoData';
 import { Button } from './Button';
+import Shake from 'react-reveal/Shake';
+import Fade from 'react-reveal/Fade';
+
 const InteriorDesign = () => {
   const { title, img, description, path } = interiorDesign;
   return (
@@ -9,12 +12,16 @@ const InteriorDesign = () => {
       <Container>
         <ContentContainer>
           <TextContent>
-            <h1>{title}</h1>
-            <p>{description}</p>
-            <Button to={path}>Sew now</Button>
+            <Shake>
+              <h1>{title}</h1>
+              <p>{description}</p>
+              <Button to={path}>Sew now</Button>
+            </Shake>
           </TextContent>
           <ImgContainer>
-            <img src={img} alt='interior design' />
+            <Fade top>
+              <img src={img} alt='interior design' />
+            </Fade>
           </ImgContainer>
         </ContentContainer>
       </Container>
