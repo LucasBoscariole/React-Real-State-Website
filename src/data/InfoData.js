@@ -31,21 +31,21 @@ export const NewHouses = [
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vel odio, accusamus saepe ea eligendi.',
     img: Image5,
-    path: '/homes',
+    id: '5',
   },
   {
     title: 'California, USA',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vel odio, accusamus saepe ea eligendi.',
     img: Image6,
-    path: '/homes',
+    id: '6',
   },
   {
     title: 'San Antonio, USA',
     description:
       'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla itaque amet fugiat, culpa aperiam consectetur.',
     img: Image7,
-    path: '/homes',
+    id: '7',
   },
 ];
 export const interiorDesign = {

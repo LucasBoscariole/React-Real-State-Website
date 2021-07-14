@@ -49,6 +49,8 @@ const Container = styled(Link)`
   margin: 0 0.8rem 2.5rem 0.8rem;
   border-radius: 0 15px 0 15px;
   text-decoration: none;
+  box-shadow: 0px 0px 19px -10px rgba(0, 0, 0, 1);
+
   img {
     border-radius: 0 15px 0 0;
     width: 100%;

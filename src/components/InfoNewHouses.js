@@ -19,7 +19,7 @@ const InfoNewHouses = () => {
                 <h2>{item.title}</h2>
                 <p>{item.description}</p>
                 <Button
-                  to={item.path}
+                  to={`/properties/:${item.id}`}
                   primary='true'
                   css={`
                     max-width: 160px;
