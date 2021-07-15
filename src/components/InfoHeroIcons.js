@@ -57,6 +57,11 @@ const ContainerIcon = styled.div`
   }
   @media screen and (max-width: 768px) {
     padding: 1.5vh 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     svg {
       font-size: 3rem;
     }

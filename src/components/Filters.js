@@ -263,11 +263,12 @@ const MobileWrapper = styled.article`
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 998;
 `;
 
 const MobileContainer = styled.div`
   width: 80%;
-  height: 80vh;
+  min-height: 80vh;
   background: #00102b;
   border-radius: 10px;
   form {

@@ -53,7 +53,7 @@ export const interiorDesign = {
   img: Image8,
   description:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quam vitae facilis sequi porro, ratione soluta illum laborum inventore at voluptate suscipit sed doloremque repellat minus qui enim necessitatibus quos!',
-  path: '/homes',
+  path: '/properties',
 };
 
 export const leisureData = {
@@ -62,5 +62,5 @@ export const leisureData = {
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eveniet ratione sequi atque. Illo, ab corporis repellendus porro veniam quidem.',
   img1: Image9,
   img2: Image10,
-  path: '/homes',
+  path: '/properties',
 };

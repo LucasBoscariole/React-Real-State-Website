@@ -41,27 +41,33 @@ const Contact = () => {
                 className='input'
               />
               <div className='flex'>
-                <label htmlFor='information'>Information</label>
-                <input
-                  type='checkbox'
-                  name='information'
-                  id='information'
-                  className='check'
-                />
-                <label htmlFor='purchase'>Purchase</label>
-                <input
-                  type='checkbox'
-                  name='purchase'
-                  id='purchase'
-                  className='check'
-                />
-                <label htmlFor='rental'>Rental</label>
-                <input
-                  type='checkbox'
-                  name='rental'
-                  id='rental'
-                  className='check'
-                />
+                <div className='label'>
+                  <label htmlFor='information'>Information</label>
+                  <input
+                    type='checkbox'
+                    name='information'
+                    id='information'
+                    className='check'
+                  />
+                </div>
+                <div className='label'>
+                  <label htmlFor='purchase'>Purchase</label>
+                  <input
+                    type='checkbox'
+                    name='purchase'
+                    id='purchase'
+                    className='check'
+                  />
+                </div>
+                <div className='label'>
+                  <label htmlFor='rental'>Rental</label>
+                  <input
+                    type='checkbox'
+                    name='rental'
+                    id='rental'
+                    className='check'
+                  />
+                </div>
               </div>
               <textarea
                 name='message'
@@ -209,8 +215,9 @@ const FlexOne = styled.div`
   }
   @media screen and (max-width: 769px) {
     width: 100%;
-    height: 70vh;
+    min-height: 50vh;
     margin-top: 0rem;
+    margin-bottom: 5vh;
     .input {
       &:first-child {
         padding-top: 1rem;
@@ -218,6 +225,7 @@ const FlexOne = styled.div`
     }
     .flex {
       width: 50%;
+      display: block;
     }
   }
 `;

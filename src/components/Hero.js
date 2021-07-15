@@ -55,7 +55,7 @@ const Hero = () => {
                     <h1>{item.title}</h1>
                     <p>{item.price}</p>
                     <Button
-                      to={item.path}
+                      to={`/properties/:${item.path}`}
                       primary='true'
                       css={`
                         max-width: 160px;

@@ -41,7 +41,11 @@ const Footer = () => {
             </Flex>
             <ContainerIcons>
               {FooterDataIcons.map((item, index) => {
-                return <FooterIcons key={index}>{item.icon}</FooterIcons>;
+                return (
+                  <FooterIcons href={item.path} key={index}>
+                    {item.icon}
+                  </FooterIcons>
+                );
               })}
             </ContainerIcons>
           </ExploreContainer>

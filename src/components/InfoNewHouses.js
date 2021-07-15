@@ -44,6 +44,9 @@ export default InfoNewHouses;
 const Wrapper = styled.section`
   min-height: 80vh;
   width: 100%;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
 `;
 const Container = styled.div`
   width: 90%;

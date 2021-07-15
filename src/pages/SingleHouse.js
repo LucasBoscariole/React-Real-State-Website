@@ -83,7 +83,7 @@ const BackgroundImageTwo = styled.div`
   position: absolute;
   top: 30vh;
   right: 0;
-  background: #00102b;
+  background: rgba(3, 66, 255, 0.5);
   z-index: -11;
 `;
 const WrapperContainer = styled.section`
