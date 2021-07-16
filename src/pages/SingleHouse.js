@@ -21,10 +21,11 @@ const SingleHouse = () => {
       <BackgroundImageTwo />
       <WrapperContainer>
         <Container>
+          {/*eslint-disable-next-line */}
           {homesDataObject.map((item) => {
             if (item.id === id) {
               return (
-                <>
+                <div key={item.id}>
                   <ImageContainer>
                     <Gallery images={item.images} />
                   </ImageContainer>
@@ -48,7 +49,7 @@ const SingleHouse = () => {
                     </div>
                     <Button to='/contact'>Know More</Button>
                   </InformationContainer>
-                </>
+                </div>
               );
             }
           })}

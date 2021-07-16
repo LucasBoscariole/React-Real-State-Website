@@ -1,13 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useGlobalContext } from '../context';
 import { FooterDataIcons } from '../data/FooterData';
 import Image1 from '../images/image14.jpg';
 import Image2 from '../images/image9.jpg';
+import { db } from '../components/firebase';
 
 const Contact = () => {
   const { setBackgroundPages } = useGlobalContext();
   setBackgroundPages(true);
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [information, setInformation] = useState(false);
+  const [purchase, setPurchase] = useState(false);
+  const [rental, setRental] = useState(false);
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    db.collection('form')
+      .add({
+        name: name,
+        email: email,
+        phone: phone,
+        information: information,
+        purchase: purchase,
+        rental: rental,
+        message: message,
+      })
+      .catch((err) => console.log(err));
+    setName('');
+    setEmail('');
+    setPhone('');
+    setInformation(false);
+    setPurchase(false);
+    setRental(false);
+    setMessage('');
+  };
+
   return (
     <>
       <Background />
@@ -15,7 +47,7 @@ const Contact = () => {
       <Wrapper>
         <Container>
           <FlexOne>
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form onSubmit={handleSubmit}>
               <input
                 type='text'
                 name='text'
@@ -23,6 +55,8 @@ const Contact = () => {
                 placeholder='Name'
                 maxLength='15'
                 className='input'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
               <input
                 type='email'
@@ -31,6 +65,8 @@ const Contact = () => {
                 placeholder='Email'
                 maxLength='40'
                 className='input'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <input
                 type='tel'
@@ -39,6 +75,8 @@ const Contact = () => {
                 placeholder='Phone'
                 maxLength='40'
                 className='input'
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
               <div className='flex'>
                 <div className='label'>
@@ -48,6 +86,8 @@ const Contact = () => {
                     name='information'
                     id='information'
                     className='check'
+                    checked={information}
+                    onChange={(e) => setInformation(e.target.checked)}
                   />
                 </div>
                 <div className='label'>
@@ -57,6 +97,8 @@ const Contact = () => {
                     name='purchase'
                     id='purchase'
                     className='check'
+                    checked={purchase}
+                    onChange={(e) => setPurchase(e.target.checked)}
                   />
                 </div>
                 <div className='label'>
@@ -66,6 +108,8 @@ const Contact = () => {
                     name='rental'
                     id='rental'
                     className='check'
+                    checked={rental}
+                    onChange={(e) => setRental(e.target.checked)}
                   />
                 </div>
               </div>
@@ -73,6 +117,8 @@ const Contact = () => {
                 name='message'
                 id='message'
                 placeholder='Message'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
               <br />
               <button type='submit'>Submit</button>
