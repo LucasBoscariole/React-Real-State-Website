@@ -3,8 +3,15 @@
 Website made from scratch with React. The website form works with Firebase backend that goes to my account.
 The website has animations, icons, carousel and styled components.
 
-Mobile Speed WEbsite: 93
-Desktop Speed Website: 98
+The website speed to be seen is before Firebase, because this website is for skill practicing, that's why I left firebase as the form submition. It would be of better us to handle submit with something else.
+
+Speed before Firebase:
+-Mobile Speed Website: 93
+-Desktop Speed Website: 98
+
+Speed after Firebase:
+-Mobile Speed Website: 77
+-Desktop Speed Website: 97
 
 ## Form Submit
 
