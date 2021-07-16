@@ -4,7 +4,6 @@ import { useGlobalContext } from '../context';
 import { FooterDataIcons } from '../data/FooterData';
 import Image1 from '../images/image14.jpg';
 import Image2 from '../images/image9.jpg';
-import { db } from '../components/firebase';
 
 const Contact = () => {
   const { setBackgroundPages } = useGlobalContext();
@@ -20,17 +19,6 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    db.collection('form')
-      .add({
-        name: name,
-        email: email,
-        phone: phone,
-        information: information,
-        purchase: purchase,
-        rental: rental,
-        message: message,
-      })
-      .catch((err) => console.log(err));
     setName('');
     setEmail('');
     setPhone('');
